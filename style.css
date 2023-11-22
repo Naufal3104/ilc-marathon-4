@@ -14,7 +14,6 @@
     background: #05abde;
     color: white;
     font-size: 30px;
-    min-width: 458px;
     order: 1;
   }
 
@@ -24,7 +23,6 @@
     padding: 0;
     overflow: hidden;
     background-color: #ec771d; 
-    min-width: 518px;
     order: 2;
   }
 
@@ -48,7 +46,7 @@
     margin-top: 20px;
     background: white;
     flex: 0 0 auto;
-    width: 1000px;
+    width: auto;
     border: 1px ridge #c2c2c2;
     order: 4;
   }
@@ -61,11 +59,11 @@
   }
 
   img {
-    width: 55%;
+    width: 100%;
   }
 
   aside {
-    width: 502px;
+    /* width: 502px; */
     padding-left: 15px;
     background-color: rgb(255, 255, 255);
     border: 1px ridge #c2c2c2;
