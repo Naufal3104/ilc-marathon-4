@@ -1,23 +1,37 @@
-.header {
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
     padding: 30px;
     text-align: center;
     background: #05abde;
     color: white;
     font-size: 30px;
-}
+    min-width: 458px;
+    order: 1;
+  }
 
-ul {
+  ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #ec771d;
+    background-color: #ec771d; 
+    min-width: 518px;
+    order: 2;
   }
-  
+
   li {
     float: left;
   }
-  
+
   li a {
     display: block;
     color: white;
@@ -25,8 +39,7 @@ ul {
     padding: 14px 16px;
     text-decoration: none;
   }
-  
-  /* Change the link color to #111 (black) on hover */
+
   li a:hover {
     background-color: #111;
   }
@@ -37,33 +50,162 @@ ul {
     flex: 0 0 auto;
     width: 1000px;
     border: 1px ridge #c2c2c2;
+    order: 4;
+  }
+
+  .main>h2,
+  p {
+    margin: 4px;
+    margin-top: 15px;
+
+  }
+
+  img {
+    width: 55%;
+  }
+
+  aside {
+    width: 502px;
+    padding-left: 15px;
+    background-color: rgb(255, 255, 255);
+    border: 1px ridge #c2c2c2;
+    text-align: center;
+    order: 3;
+  }
+
+  aside>img {
+    width: 40%;
+  }
+
+  aside>h4{
+    color: #05abde;
+  }
+
+  .form {
+    padding: 2%;
+  }
+
+  .form-input {
+    display: block;
+    width: 45%;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #d2d6da;
+    appearance: none;
+    border-radius: 0.5rem;
+    transition: box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  button {
+    margin-top: 20px;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    background-color: #05abde;
+    border: 1px ridge #919191;
+    border-radius: 2px;
+  }
+
+  .side {
+    width: 30%;
+    float: right;
+    margin-right: 80px;
+    font-style: italic;
+    background-color: rgb(255, 255, 255);
+  }
+
+  footer {
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    background: #05abde;
+    color: white;
+    font-size: 30px;
+    min-width: 500px;
+    order: 5;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
   }
   
-  .main > h2, p {
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: #05abde;
+    color: white;
+    font-size: 30px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ec771d;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+  .main {
+    margin-top: 20px;
+    background: white;
+    flex: 0 0 auto;
+    width: 990px;
+    border: 1px ridge #c2c2c2;
+  }
+
+  .main>h2,
+  p {
     margin: 4px;
 
   }
-   img{
-    width: 100%;
-   }
 
-   aside {
+  img {
+    width: 100%;
+  }
+
+  aside {
     width: 30%;
     padding-left: 15px;
     margin-left: 15px;
     margin-top: 20px;
     float: right;
-    font-style: italic;
     background-color: rgb(255, 255, 255);
     border: 1px ridge #c2c2c2;
     text-align: center;
   }
 
-  aside > img {
+  aside>img {
     width: 40%;
   }
 
-  .form{
+  .form {
     padding: 2%;
   }
 
@@ -92,8 +234,8 @@ ul {
     border: 1px ridge #919191;
     border-radius: 2px;
   }
-  
-  .side{
+
+  .side {
     width: 30%;
     float: right;
     margin-right: 80px;
@@ -101,7 +243,7 @@ ul {
     background-color: rgb(255, 255, 255);
   }
 
-  footer{
+  footer {
     margin-top: 10px;
     padding: 10px;
     text-align: center;
@@ -109,3 +251,4 @@ ul {
     color: white;
     font-size: 30px;
   }
+}
